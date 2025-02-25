@@ -1,8 +1,0 @@
-<p>Contador: {{ counter }} </p>
-<button (click)="incrementBy(-1)">-1</button>
-<button (click)="incrementBy()">+1</button>
-
-<p *ngIf="counter>=110; else elseBlock">El valor del contenido es mayor a 110</p>
-<ng-template #elseBlock>
-  <p>El valor del contenido es menor a 110</p>
-</ng-template>
