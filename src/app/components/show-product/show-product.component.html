@@ -1,0 +1,7 @@
+<div *ngIf="selectedProduct">
+  <p>{{ selectedProduct.name }}</p>
+  <p>ID: {{ selectedProduct.id }}</p>
+  <p>Precio: ${{ selectedProduct.price }}</p>
+  <img src="{{selectedProduct.img}}">
+</div>
+<p *ngIf="!selectedProduct">Selecciona un producto para ver los detalles.</p>
